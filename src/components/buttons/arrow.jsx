@@ -9,8 +9,7 @@ function Arrow({ rotate }) {
     const [classname, setClassName] = useState('')
 
     function caret(e) {
-        if (e.target.type === 'touchstart') {
-            e.preventDefault()
+        if (classname === '') {
             setActiveState(faCaretUp)
             setSize('6x')
             setClassName('highlight')
@@ -22,7 +21,7 @@ function Arrow({ rotate }) {
     }
 
     return (
-        <FontAwesomeIcon ontTouchStart={caret} onTouchEnd={caret} icon={activeState} className={classname} transform={{ rotate: rotate }} size={size} />
+        <FontAwesomeIcon ontPressIn={caret} onPressOut={caret} icon={activeState} className={classname} transform={{ rotate: rotate }} size={size} />
     )
 }
 export default Arrow
