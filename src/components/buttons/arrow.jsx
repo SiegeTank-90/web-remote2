@@ -21,7 +21,7 @@ function Arrow({ rotate }) {
     }
 
     return (
-        <FontAwesomeIcon ontPressIn={caret} onPressOut={caret} icon={activeState} className={classname} transform={{ rotate: rotate }} size={size} />
+        <FontAwesomeIcon onMouseDown={caret} ontPressIn={caret} icon={activeState} className={classname} transform={{ rotate: rotate }} size={size} />
     )
 }
 export default Arrow

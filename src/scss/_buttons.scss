@@ -6,7 +6,7 @@
  width: 70%;
  height: 30%;
  margin: 25px 15% 0;
- border: 2px solid rgba(255, 255, 255, 0.018);
+ border: 4px solid rgba(255, 255, 255, 0.018);
  border-radius: 15px;
 }
 
@@ -36,6 +36,11 @@
  width: 25px;
  height: 25px;
  border-radius: 100%;
+}
+
+.highlightEnter {
+ background-color: $lightOrange;
+ box-shadow: 0px 0px 24px $lightOrange;
 }
 
 .NavPad--Direction--Grid {
@@ -105,7 +110,133 @@
  );
 }
 
-.highlight path {
+// End of NavPad
+
+// Buttton Group //
+
+.ButtonGroup {
+ display: flex;
+ justify-content: space-between;
+ margin: 2.5% 5% 0;
+ height: 50%;
+}
+
+.ButtonGroup--Narrow {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px 0;
+ width: 20%;
+}
+
+.ButtonGroup--Wide {
+ width: 55%;
+ border-radius: 45px 45px 0 0;
+ border: 2px solid rgba(222, 222, 222, 0.15);
+ box-shadow: inset 0 5px 26px rgba(40, 126, 242, 0.17);
+}
+
+.ButtonGroup--Wide--Border {
+ height: 92.5%;
+ border-radius: 45px 45px 0 0;
+ padding-top: 10px;
+ margin: 10%;
+ border: 1px solid rgba(255, 255, 255, 0.13);
+ background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+}
+
+// Medium Button
+
+.Medium-Buttton {
+ text-align: center;
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ border: 3px solid $lightOrange;
+ background-color: transparent;
+ margin: 0;
+ padding: 0;
+ color: $gray;
+
+ .defaultstate {
+  width: 30px;
+  height: 20px;
+ }
+ .activestate {
+  width: 30px;
+  height: 20px;
+  color: $lightOrange;
+ }
+}
+
+// Big Button
+
+.Big-Buttton {
+ text-align: center;
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ border: 3px solid $lightOrange;
+ background-color: transparent;
+ margin: 0;
+ padding: 0;
+ color: $gray;
+
+ .defaultstate {
+  width: 25px;
+  height: 15px;
+ }
+
+ .activestate {
+  width: 35px;
+  height: 20px;
+  path {
+   color: $lightOrange;
+   filter: drop-shadow(2px 2px 100px $lightOrange);
+  }
+ }
+}
+
+// UpDownButton //
+
+.UpDownButton {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.UpDownButton--Up {
+ border-radius: 50px 50px 0 0;
+ width: 45px;
+ background-color: transparent;
+ border: 5px solid rgba(40, 126, 242, 0.3);
+ border-bottom: 0;
+ padding: 5px 0 30px;
  color: $lightOrange;
- filter: drop-shadow(2px 2px 25px $lightOrange);
+}
+
+.UpDownButton--Down {
+ width: 45px;
+ border-radius: 0 0 50px 50px;
+ background-color: transparent;
+ border: 5px solid rgba(40, 126, 242, 0.3);
+ border-top: 0;
+ padding: 40px 0 15px;
+ color: $lightOrange;
+}
+
+.UpDownButtonActive {
+ background-color: rgba(60, 97, 132, 0.5);
+}
+
+.UpDownButton--Function {
+ position: absolute;
+ margin: 0;
+ color: $lightOrange;
+ font-weight: 700;
 }
