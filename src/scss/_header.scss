@@ -5,13 +5,13 @@
  z-index: 0;
  margin: 0;
  width: 100%;
- height: 100px;
+ height: 75px;
  background-color: rgba(174, 211, 248, 0.1);
  box-shadow: inset 4px 4px 24px rgba(255, 255, 255, 0.25);
  filter: blur(16px);
 }
 
-.Nav--collapseible {
+.Nav--collapseible--closed {
  margin: -50px 15% 0;
  position: relative;
  z-index: 10;
@@ -19,8 +19,107 @@
  justify-content: space-between;
 }
 
+.Nav--collapseible--icon {
+ height: 20px;
+}
+
 .Nav--Menu {
  background-color: transparent;
  border: none;
  color: white;
+}
+
+.Nav--collapsible--open {
+ position: absolute;
+ z-index: 11;
+ width: 100%;
+ height: 100%;
+ backdrop-filter: blur(15px);
+}
+
+.Nav--collapsible--open-content {
+ width: 85%;
+ height: 100%;
+}
+
+.Nav--collapsible--open-header {
+ background-color: rgba(0, 0, 0, 0.8);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 5%;
+ padding-top: 25px;
+ height: 75px;
+}
+
+.Nav--collapsible--open--closebutton {
+ background-color: transparent;
+ border: none;
+ color: white;
+}
+
+.Nav--collapsible--open-title-section {
+ color: white;
+ text-align: center;
+ background-color: rgba(36, 51, 65, 1);
+ padding: 1em 0 20%;
+}
+
+.Nav--collapsible--open-title-section--Title {
+ font-weight: 400;
+ font-size: 48px;
+ margin: 0;
+}
+
+.Nav--collapsible--open-settings {
+ height: 100%;
+ background-color: rgba(51, 51, 51);
+}
+
+.Nav--collapsible--open-settings--setting {
+ margin-bottom: 1px;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ color: white;
+ background-color: rgba(255, 255, 255, 0.05);
+}
+
+.Nav--collapsible--open-settings--setting--title {
+ font-weight: 400;
+ font-size: 16px;
+ margin-left: 25px;
+}
+
+.Nav--collapsible--open-settings--spacer {
+ display: flex;
+ align-items: center;
+ padding: 5px;
+}
+
+.cc-On,
+.cc-Off {
+ margin: 0 25px;
+}
+
+.cc-On {
+ color: rgba(83, 137, 193, 1);
+}
+
+.StopCircle {
+ color: red;
+ width: 25px;
+ height: 25px;
+ margin-right: 5px;
+}
+
+.Nav--collapsible--open-settings--setting--accordian {
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+ background-color: rgba(255, 255, 255, 0.05);
+ color: white;
+ border: none;
+ margin-bottom: 1px;
 }

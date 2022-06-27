@@ -1,0 +1,8 @@
+<svg id="MDI_television" data-name="MDI / television"
+    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="Boundary" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="24" height="24" stroke="none"/>
+        <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+    </g>
+    <path id="Path_television" data-name="Path / television" d="M21,17H3V5H21m0-2H3A2,2,0,0,0,1,5V17a2,2,0,0,0,2,2H8v2h8V19h5a2,2,0,0,0,2-2V5A2,2,0,0,0,21,3Z" fill="#bcc4cc"/>
+</svg>

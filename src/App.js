@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header';
 import NavPad from './components/buttons/navpad';
 import ButtonGroup from './components/buttonGroup';
+import Menu from './components/Menu';
 
 function App() {
  return (
@@ -10,6 +11,7 @@ function App() {
     <Header />
     <NavPad />
     <ButtonGroup />
+    <Menu />
    </div>
   </div>
  );
