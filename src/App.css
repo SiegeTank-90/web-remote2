@@ -501,6 +501,9 @@
     width: 500px;
     height: 725px;
   }
+  .Background {
+    border-radius: 25px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
