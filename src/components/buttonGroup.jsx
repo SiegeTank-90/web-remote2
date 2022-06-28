@@ -9,7 +9,7 @@ function ButtonGroup() {
     return (
         <div className="ButtonGroup">
             <div className="ButtonGroup--Narrow">
-                <BigButton feature={faCaretLeft} />
+                <BigButton feature={faCaretLeft} action='' />
                 <UpDownButton feature={'VOL'} />
             </div>
             <div className="ButtonGroup--Wide">
@@ -21,7 +21,7 @@ function ButtonGroup() {
             </div>
 
             <div className="ButtonGroup--Narrow">
-                <BigButton feature={faShuffle} />
+                <BigButton feature={faShuffle} action='' />
                 <UpDownButton feature={'CH'} />
             </div>
 

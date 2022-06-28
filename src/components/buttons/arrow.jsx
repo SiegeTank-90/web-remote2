@@ -1,27 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
-function Arrow({ rotate }) {
+function Arrow({ rotate, index, directionIndex }) {
 
-    const [activeState, setActiveState] = useState(faChevronUp)
-    const [size, setSize] = useState('2x')
-    const [classname, setClassName] = useState('')
 
-    function caret(e) {
-        if (classname === '') {
-            setActiveState(faCaretUp)
-            setSize('6x')
-            setClassName('highlight')
-        } else {
-            setActiveState(faChevronUp)
-            setSize('2x')
-            setClassName('')
-        }
+
+    let activeState = faChevronUp;
+    let size = '2x';
+    let classname = '';
+
+    if (index === directionIndex) {
+        activeState = faCaretUp;
+        size = '6x';
+        classname = 'highlight';
     }
 
     return (
-        <FontAwesomeIcon onMouseDown={caret} ontPressIn={caret} icon={activeState} className={classname} transform={{ rotate: rotate }} size={size} />
+        <FontAwesomeIcon icon={activeState} className={classname} transform={{ rotate: rotate }} size={size} />
     )
 }
 export default Arrow

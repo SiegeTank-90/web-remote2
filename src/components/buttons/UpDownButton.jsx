@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { faChevronUp, faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLongPress } from 'use-long-press';
 
 
 
@@ -23,49 +24,60 @@ function UpDownButton({ feature }) {
         iconStateUp = 'IconStateOffline'
     }
 
+    const callback = useCallback(event => {
+        //Change channel
+    }, [])
 
-    function handleClickUp() {
-        if (activeStateIconUp === faChevronUp) {
-            setActiveStateIconUp(faCaretUp)
+    const bindUp = useLongPress(
+        callback, {
+        onStart: () => {
             setActiveStateBackgroundUp('UpDownButtonActiveUp')
-            setActiveStateBackgroundDwn('')
-            setActiveStateIconDwn(faChevronUp)
-
-
-
-        } else {
-            setActiveStateIconUp(faChevronUp)
-            setActiveStateBackgroundUp('')
+            setActiveStateIconUp(faCaretUp)
         }
-    }
+        ,
+        onFinish: () => {
+            setActiveStateBackgroundUp('')
+            setActiveStateIconUp(faChevronUp)
+        }
+        ,
+        onCancel: () => {
+            setActiveStateBackgroundUp('')
+            setActiveStateIconUp(faChevronUp)
+        },
+        threshold: 60
+    });
 
-    function handleClickDwn() {
-        if (activeStateIconDwn === faChevronUp) {
-            setActiveStateIconDwn(faCaretUp)
+    const bindDwn = useLongPress(
+        callback, {
+        onStart: () => {
             setActiveStateBackgroundDwn('UpDownButtonActiveDwn')
-            setActiveStateBackgroundUp('')
-            setActiveStateIconUp(faChevronUp)
-
-
-
-        } else {
-            setActiveStateIconDwn(faChevronUp)
-            setActiveStateBackgroundDwn('')
-
+            setActiveStateIconDwn(faCaretUp)
         }
-    }
+        ,
+        onFinish: () => {
+            setActiveStateBackgroundDwn('')
+            setActiveStateIconDwn(faChevronUp)
+        }
+        ,
+        onCancel: () => {
+            setActiveStateBackgroundDwn('')
+            setActiveStateIconDwn(faChevronUp)
+        },
+        threshold: 60
+    });
+
 
 
     return (
         <div className="UpDownButton">
-            <button onClick={handleClickUp} className={'UpDownButton--Up'}>
+            <button {...bindUp()} className={'UpDownButton--Up'}>
                 <div className={`${activeStateBackgroundUp}`}>
                     <FontAwesomeIcon icon={activeStateIconUp} className={iconStateUp} />
                 </div>
 
             </button>
             <p className="UpDownButton--Function">{feature}</p>
-            <button onClick={handleClickDwn} className={'UpDownButton--Down'}>
+            <button {...bindDwn()} className={'UpDownButton--Down'}>
                 <div className={activeStateBackgroundDwn}>
                     <FontAwesomeIcon icon={activeStateIconDwn} transform={{ rotate: 180 }} className={iconStateDwn} />
                 </div>

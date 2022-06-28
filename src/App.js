@@ -1,3 +1,4 @@
+import React, { useRef, useState } from 'react';
 import './App.css';
 import Header from './components/header';
 import NavPad from './components/buttons/navpad';

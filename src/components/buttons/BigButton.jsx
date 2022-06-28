@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useLongPress } from 'use-long-press';
 
+function BigButton({ feature, action }) {
 
-function BigButton({ feature }) {
+    const [activeState, setActiveState] = useState('defaultstate');
 
-    const [activeState, setActiveState] = useState('defaultstate')
+    const BigButtonCallback = useCallback(event => {
+        setActiveState('activestate')
+        //Do Action
+    }, [])
 
-    function handleClick() {
-        if (activeState === 'defaultstate') {
-            setActiveState('activestate')
-        } else { setActiveState('defaultstate') }
-    }
+    const bindButton = useLongPress(
+        BigButtonCallback, {
+        onFinish: () => setActiveState('defaultstate'),
+        threshold: 60
+
+    });
 
     return (
-        <button onClick={handleClick} className="Big-Buttton">
+        <button {...bindButton()} className="Big-Buttton">
             <FontAwesomeIcon icon={feature} className={activeState} />
         </button>
     )
