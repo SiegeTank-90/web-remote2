@@ -413,6 +413,29 @@
   background-color: black;
 }
 
+@media screen and (max-height: 650px) {
+  .NavPad {
+    height: 30%;
+  }
+}
+@media screen and (max-height: 500px) {
+  .NavPad {
+    height: 30%;
+    margin: 10px 10% 10px;
+  }
+  .ButtonGroup {
+    height: 40%;
+  }
+  .Nav {
+    height: 50px;
+  }
+  .Nav--collapsible--open-title-section--Title {
+    font-size: 32px;
+  }
+  .Nav--collapsible--open-title-section {
+    padding: 1em;
+  }
+}
 .Menu {
   width: 100%;
   border-top: 2px solid rgba(255, 255, 255, 0.18);
@@ -470,6 +493,14 @@
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .App {
+    margin: 15% 15%;
+    width: 500px;
+    height: 725px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

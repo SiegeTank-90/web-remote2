@@ -315,3 +315,29 @@
 .ToggleNode-Off {
  background-color: black;
 }
+
+@media screen and (max-height: 650px) {
+ .NavPad {
+  height: 30%;
+ }
+}
+
+@media screen and (max-height: 500px) {
+ .NavPad {
+  height: 30%;
+  margin: 10px 10% 10px;
+ }
+ .ButtonGroup {
+  height: 40%;
+ }
+ .Nav {
+  height: 50px;
+ }
+
+ .Nav--collapsible--open-title-section--Title {
+  font-size: 32px;
+ }
+ .Nav--collapsible--open-title-section {
+  padding: 1em;
+ }
+}
