@@ -316,6 +316,52 @@
  background-color: black;
 }
 
+//AppGalleryButton
+
+.AppsView {
+ position: relative;
+ padding: 5% 5% 0;
+ height: 70%;
+ z-index: 0;
+}
+
+.AppsView--AppsGallery {
+ position: relative;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ max-height: 100%;
+ gap: 5px 5px;
+ overflow-y: scroll;
+ -ms-overflow-style: none; /* IE and Edge */
+ scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.AppsView--AppsGallery::-webkit-scrollbar {
+ display: none;
+}
+
+.AppsGallery--Button {
+ background-color: rgba(175, 192, 212, 0.05);
+ padding: 5%;
+ width: 40%;
+ min-height: 180px;
+ border: none;
+}
+
+.AppsGallery--Button:hover {
+ background-color: white;
+ box-shadow: 5px -10px 41px black;
+}
+.AppsGallery--Logo {
+ width: 100%;
+}
+
+.AppsGallery--Message {
+ font-size: 0.75em;
+}
+
 @media screen and (max-height: 675px) {
  .NavPad {
   height: 30%;

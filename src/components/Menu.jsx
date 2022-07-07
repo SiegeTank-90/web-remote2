@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MenuNavigationButton from "./buttons/menuNavigationButton";
 import appIcon from '../images/app.svg'
 import deviceIcon from '../images/devices.svg'
@@ -6,12 +6,11 @@ import remoteIcon from '../images/remote.svg'
 import liveTVIcon from '../images/LiveTv.svg'
 import appIconActive from '../images/app-active.svg'
 import remoteIconActive from '../images/remote-active.svg'
-import liveTVIconActive from '../images/liveTV-active.svg'
+import liveTVIconActive from '../images/LiveTv-active.svg'
 import deviceIconActive from '../images/devices-active.svg'
 
-function Menu() {
+function Menu({ menuIndex, setMenuIndex }) {
 
-    const [menuIndex, setMenuIndex] = useState(1)
 
 
     return (
