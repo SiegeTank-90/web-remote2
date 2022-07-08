@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/header';
 import RemoveView from './components/views/RemoteView';
 import AppsView from './components/views/AppsView';
+import LiveView from './components/views/LiveView';
 import Menu from './components/Menu';
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
   View = <RemoveView />;
  } else if (menuIndex === 2) {
   View = <AppsView />;
+ } else if (menuIndex === 3) {
+  View = <LiveView />;
  }
 
  return (

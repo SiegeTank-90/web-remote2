@@ -1,0 +1,118 @@
+.Channel {
+ display: flex;
+ background: transparent;
+ border: none;
+ padding: 0;
+ margin: 0;
+ align-items: center;
+}
+
+.Channel--Content {
+ display: inline-grid;
+ grid-template-columns: 20% 50% 20%;
+ padding: 0 2.5%;
+ width: 90%;
+ height: 100%;
+ color: white;
+ background-color: rgba(255, 255, 255, 0.05);
+}
+.Channel--Content--Active {
+ display: inline-grid;
+ grid-template-columns: 20% 50% 20%;
+ padding: 0 2.5%;
+ width: 90%;
+ height: 100%;
+ color: white;
+ background-color: rgba(185, 185, 185, 0.397);
+}
+
+.Channel--Content--Station,
+.Channel--Content--Time,
+.Channel--Content--Icon {
+ align-self: center;
+ font-size: 0.6em;
+ font-weight: 400;
+}
+
+.Channel--Content--Icon {
+ width: 15px;
+ max-height: 15px;
+ align-self: center;
+}
+
+.Channel--Number {
+ width: 1.5%;
+ margin: 4%;
+ font-weight: 200;
+ font-size: 0.5em;
+ color: rgba(255, 255, 255, 0.5);
+}
+
+.LiveView--Guide {
+ overflow-y: scroll;
+ display: flex;
+ flex-direction: column;
+ height: 70%;
+ gap: 2px 0;
+ margin-top: 15px;
+ -ms-overflow-style: none; /* IE and Edge */
+ scrollbar-width: none; /* Firefox */
+}
+
+.LiveView--Guide::-webkit-scrollbar {
+ display: none;
+}
+
+.Channel--Content--Time {
+ color: rgba(255, 255, 255, 0.5);
+}
+
+.Guide--Advertisement {
+ background-color: white;
+ display: flex;
+ min-height: 65px;
+ height: 15%;
+}
+
+.Guide--Advertisement-message {
+ margin-left: 2.5%;
+ align-self: center;
+ width: 60%;
+}
+
+.Guide--Advertisement-title,
+.Guide--Advertisement-paragraph {
+ color: rgba(0, 0, 0, 0.7);
+ margin: 0;
+ padding: 0;
+ font-size: 0.6em;
+}
+
+.Guide--Advertisement-title {
+ font-weight: 800;
+}
+
+.Guide--Advertisement-paragraph {
+ font-weight: 400;
+}
+
+.Guide--Application-Button {
+ background-color: rgba(255, 255, 255, 0.3);
+ border: none;
+ backdrop-filter: blur(15px) brightness(1);
+ display: flex;
+ height: 15%;
+ min-height: 65px;
+ box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.Guide--Application-logo {
+ margin: 5%;
+ max-width: 50px;
+ align-self: center;
+}
+.Guide--Application-paragraph {
+ align-self: center;
+ font-size: 0.5em;
+ color: rgba(146, 149, 154, 1);
+}

@@ -124,7 +124,7 @@
 
 .NavPad {
   width: 80%;
-  height: 40%;
+  height: 50%;
   margin: 25px 10% 25px;
   border: 4px solid rgba(255, 255, 255, 0.018);
   border-radius: 15px;
@@ -225,6 +225,7 @@
   display: flex;
   justify-content: space-between;
   gap: 0 5px;
+  height: 42.5%;
   margin: 2.5% 2.5% 0;
 }
 
@@ -438,9 +439,9 @@
 }
 
 .AppsGallery--Button {
-  background-color: rgba(175, 192, 212, 0.05);
+  background-color: rgba(241, 241, 241, 0.25);
   padding: 5%;
-  width: 40%;
+  width: 48%;
   min-height: 180px;
   border: none;
 }
@@ -452,24 +453,21 @@
 
 .AppsGallery--Logo {
   width: 100%;
+  --animate-duration: 0.8s;
 }
 
 .AppsGallery--Message {
   font-size: 0.75em;
+  --animate-duration: 0.75s;
 }
 
-@media screen and (max-height: 675px) {
-  .NavPad {
-    height: 30%;
-  }
-}
 @media screen and (max-height: 550px) {
   .NavPad {
-    height: 30%;
+    height: 45%;
     margin: 10px 10% 10px;
   }
   .ButtonGroup {
-    height: 40%;
+    height: 50%;
   }
   .Nav {
     height: 50px;
@@ -479,6 +477,15 @@
   }
   .Nav--collapsible--open-title-section {
     padding: 1em;
+  }
+}
+@media screen and (max-height: 675px) {
+  .NavPad {
+    height: 45%;
+    margin: 10px 10% 10px;
+  }
+  .ButtonGroup {
+    height: 50%;
   }
 }
 .Menu {
@@ -514,6 +521,127 @@
   color: rgb(255, 210, 149);
 }
 
+.Channel {
+  display: flex;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.Channel--Content {
+  display: inline-grid;
+  grid-template-columns: 20% 50% 20%;
+  padding: 0 2.5%;
+  width: 90%;
+  height: 100%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.Channel--Content--Active {
+  display: inline-grid;
+  grid-template-columns: 20% 50% 20%;
+  padding: 0 2.5%;
+  width: 90%;
+  height: 100%;
+  color: white;
+  background-color: rgba(185, 185, 185, 0.397);
+}
+
+.Channel--Content--Station,
+.Channel--Content--Time,
+.Channel--Content--Icon {
+  align-self: center;
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+.Channel--Content--Icon {
+  width: 15px;
+  max-height: 15px;
+  align-self: center;
+}
+
+.Channel--Number {
+  width: 1.5%;
+  margin: 4%;
+  font-weight: 200;
+  font-size: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.LiveView--Guide {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  gap: 2px 0;
+  margin-top: 15px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.LiveView--Guide::-webkit-scrollbar {
+  display: none;
+}
+
+.Channel--Content--Time {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Guide--Advertisement {
+  background-color: white;
+  display: flex;
+  min-height: 65px;
+  height: 15%;
+}
+
+.Guide--Advertisement-message {
+  margin-left: 2.5%;
+  align-self: center;
+  width: 60%;
+}
+
+.Guide--Advertisement-title,
+.Guide--Advertisement-paragraph {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+  font-size: 0.6em;
+}
+
+.Guide--Advertisement-title {
+  font-weight: 800;
+}
+
+.Guide--Advertisement-paragraph {
+  font-weight: 400;
+}
+
+.Guide--Application-Button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  backdrop-filter: blur(15px) brightness(1);
+  display: flex;
+  height: 15%;
+  min-height: 65px;
+  box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+.Guide--Application-logo {
+  margin: 5%;
+  max-width: 50px;
+  align-self: center;
+}
+
+.Guide--Application-paragraph {
+  align-self: center;
+  font-size: 0.5em;
+  color: rgb(146, 149, 154);
+}
+
 .App {
   position: absolute;
   z-index: -10;
@@ -538,6 +666,10 @@
 
 .hidden {
   display: none;
+}
+
+.RemoteView {
+  height: 70%;
 }
 
 @media screen and (min-width: 550px) {

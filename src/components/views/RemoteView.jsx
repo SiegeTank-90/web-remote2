@@ -5,10 +5,10 @@ import ButtonGroup from '../buttonGroup';
 function RemoteView() {
 
     return (
-        <>
+        <div className='RemoteView'>
             <NavPad />
             <ButtonGroup />
-        </>
+        </div>
 
     )
 }

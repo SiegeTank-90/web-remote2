@@ -1,0 +1,222 @@
+[
+ {
+  "icon": "abcIcon.png",
+  "id": 1,
+  "station": "ABC"
+ },
+ {
+  "icon": "eIcon.png",
+  "id": 2,
+  "station": "E!"
+ },
+ {
+  "icon": "foodIcon.png",
+  "id": 3,
+  "station": "FOOD NETWORK"
+ },
+ {
+  "icon": "fxIcon.png",
+  "id": 4,
+  "station": "FX"
+ },
+ {
+  "icon": "historyIcon.png",
+  "id": 5,
+  "station": "HISTORY"
+ },
+ {
+  "icon": "nickIcon.png",
+  "id": 6,
+  "station": "NICKELODEON"
+ },
+ {
+  "icon": "TBSIcon.png",
+  "id": 7,
+  "station": "TBS"
+ },
+ {
+  "icon": "trueIcon.png",
+  "id": 8,
+  "station": "TRUE"
+ },
+ {
+  "icon": "usaIcon.png",
+  "id": 8,
+  "station": "USA"
+ },
+ {
+  "icon": "vh1Icon.png",
+  "id": 8,
+  "station": "VH1"
+ },
+ {
+  "icon": "weIcon.png",
+  "id": 9,
+  "station": "WE"
+ },
+ {
+  "icon": "abcIcon.png",
+  "id": 10,
+  "station": "ABC"
+ },
+ {
+  "icon": "eIcon.png",
+  "id": 11,
+  "station": "E!"
+ },
+ {
+  "icon": "foodIcon.png",
+  "id": 12,
+  "station": "FOOD NETWORK"
+ },
+ {
+  "icon": "fxIcon.png",
+  "id": 13,
+  "station": "FX"
+ },
+ {
+  "icon": "historyIcon.png",
+  "id": 14,
+  "station": "HISTORY"
+ },
+ {
+  "icon": "nickIcon.png",
+  "id": 15,
+  "station": "NICKELODEON"
+ },
+ {
+  "icon": "TBSIcon.png",
+  "id": 16,
+  "station": "TBS"
+ },
+ {
+  "icon": "trueIcon.png",
+  "id": 17,
+  "station": "TRUE"
+ },
+ {
+  "icon": "usaIcon.png",
+  "id": 18,
+  "station": "USA"
+ },
+ {
+  "icon": "vh1Icon.png",
+  "id": 19,
+  "station": "VH1"
+ },
+ {
+  "icon": "weIcon.png",
+  "id": 20,
+  "station": "WE"
+ },
+ {
+  "icon": "abcIcon.png",
+  "id": 21,
+  "station": "ABC"
+ },
+ {
+  "icon": "eIcon.png",
+  "id": 22,
+  "station": "E!"
+ },
+ {
+  "icon": "foodIcon.png",
+  "id": 23,
+  "station": "FOOD NETWORK"
+ },
+ {
+  "icon": "fxIcon.png",
+  "id": 24,
+  "station": "FX"
+ },
+ {
+  "icon": "historyIcon.png",
+  "id": 25,
+  "station": "HISTORY"
+ },
+ {
+  "icon": "nickIcon.png",
+  "id": 26,
+  "station": "NICKELODEON"
+ },
+ {
+  "icon": "TBSIcon.png",
+  "id": 27,
+  "station": "TBS"
+ },
+ {
+  "icon": "trueIcon.png",
+  "id": 28,
+  "station": "TRUE"
+ },
+ {
+  "icon": "usaIcon.png",
+  "id": 29,
+  "station": "USA"
+ },
+ {
+  "icon": "vh1Icon.png",
+  "id": 30,
+  "station": "VH1"
+ },
+ {
+  "icon": "weIcon.png",
+  "id": 31,
+  "station": "WE"
+ },
+ {
+  "icon": "abcIcon.png",
+  "id": 32,
+  "station": "ABC"
+ },
+ {
+  "icon": "eIcon.png",
+  "id": 33,
+  "station": "E!"
+ },
+ {
+  "icon": "foodIcon.png",
+  "id": 34,
+  "station": "FOOD NETWORK"
+ },
+ {
+  "icon": "fxIcon.png",
+  "id": 35,
+  "station": "FX"
+ },
+ {
+  "icon": "historyIcon.png",
+  "id": 36,
+  "station": "HISTORY"
+ },
+ {
+  "icon": "nickIcon.png",
+  "id": 37,
+  "station": "NICKELODEON"
+ },
+ {
+  "icon": "TBSIcon.png",
+  "id": 38,
+  "station": "TBS"
+ },
+ {
+  "icon": "trueIcon.png",
+  "id": 39,
+  "station": "TRUE"
+ },
+ {
+  "icon": "usaIcon.png",
+  "id": 40,
+  "station": "USA"
+ },
+ {
+  "icon": "vh1Icon.png",
+  "id": 41,
+  "station": "VH1"
+ },
+ {
+  "icon": "weIcon.png",
+  "id": 42,
+  "station": "WE"
+ }
+]

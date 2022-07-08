@@ -2,6 +2,7 @@
 @use 'header' as *;
 @use 'buttons' as *;
 @use 'menu' as *;
+@use 'channels' as *;
 
 .App {
  position: absolute;
@@ -33,6 +34,10 @@
 
 .hidden {
  display: none;
+}
+
+.RemoteView {
+ height: 70%;
 }
 
 @media screen and (min-width: 550px) {
