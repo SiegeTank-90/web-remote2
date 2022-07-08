@@ -6,7 +6,7 @@ import remoteIcon from '../images/remote.svg'
 import liveTVIcon from '../images/LiveTv.svg'
 import appIconActive from '../images/app-active.svg'
 import remoteIconActive from '../images/remote-active.svg'
-import liveTVIconActive from '../images/LiveTv-active.svg'
+import liveTVIconActive from '../images/liveTv-active.svg'
 import deviceIconActive from '../images/devices-active.svg'
 
 function Menu({ menuIndex, setMenuIndex }) {
