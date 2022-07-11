@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5daa40ee.css",
-    "main.js": "./static/js/main.3ac441c9.js",
+    "main.js": "./static/js/main.9d3ff305.js",
     "static/js/787.b23df5a7.chunk.js": "./static/js/787.b23df5a7.chunk.js",
     "static/media/netflixLogo.svg": "./static/media/netflixLogo.4e304ba425658e336e36d43824ac48a3.svg",
     "static/media/addImg.png": "./static/media/addImg.8df54253b43a32e4d860.png",
@@ -11,21 +11,21 @@
     "static/media/youTubeLogo.svg": "./static/media/youTubeLogo.b824c341e95798bb75bf3c02e3da2333.svg",
     "static/media/app-active.svg": "./static/media/app-active.6b3b240ce040a60e13aa1276c00869a8.svg",
     "static/media/app.svg": "./static/media/app.316d1e914a575547fdd8d729fa6a9628.svg",
-    "static/media/liveTv.svg": "./static/media/liveTv.645434c9954bae88bc979768d5b78185.svg",
     "static/media/remote.svg": "./static/media/remote.58faad72d089115ae5eacd2e791c30d1.svg",
     "static/media/remote-active.svg": "./static/media/remote-active.2960c9de4243691f304b04178c539b53.svg",
-    "static/media/liveTv-active.svg": "./static/media/liveTv-active.adaf544de81e8741c6e354404447093a.svg",
+    "static/media/livetv-active.svg": "./static/media/livetv-active.adaf544de81e8741c6e354404447093a.svg",
+    "static/media/livetv.svg": "./static/media/livetv.969fdc7ef6603662b3502eab51d8557f.svg",
     "static/media/hululogo.svg": "./static/media/hululogo.fc2bb340d3bc2d79c6f4dffda0afeba5.svg",
     "index.html": "./index.html",
     "static/media/devices.svg": "./static/media/devices.30e350a9f800e4c488519771435a2f6a.svg",
     "static/media/powerbutton.svg": "./static/media/powerbutton.5f32805dec201ef2c969038e792426f2.svg",
     "static/media/devices-active.svg": "./static/media/devices-active.ec45df8f843cad257114e6f26f493a3e.svg",
     "main.5daa40ee.css.map": "./static/css/main.5daa40ee.css.map",
-    "main.3ac441c9.js.map": "./static/js/main.3ac441c9.js.map",
+    "main.9d3ff305.js.map": "./static/js/main.9d3ff305.js.map",
     "787.b23df5a7.chunk.js.map": "./static/js/787.b23df5a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5daa40ee.css",
-    "static/js/main.3ac441c9.js"
+    "static/js/main.9d3ff305.js"
   ]
 }
