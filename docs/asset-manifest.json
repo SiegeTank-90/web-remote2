@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5daa40ee.css",
-    "main.js": "./static/js/main.1615eba9.js",
+    "main.js": "./static/js/main.3ac441c9.js",
     "static/js/787.b23df5a7.chunk.js": "./static/js/787.b23df5a7.chunk.js",
     "static/media/netflixLogo.svg": "./static/media/netflixLogo.4e304ba425658e336e36d43824ac48a3.svg",
     "static/media/addImg.png": "./static/media/addImg.8df54253b43a32e4d860.png",
@@ -21,11 +21,11 @@
     "static/media/powerbutton.svg": "./static/media/powerbutton.5f32805dec201ef2c969038e792426f2.svg",
     "static/media/devices-active.svg": "./static/media/devices-active.ec45df8f843cad257114e6f26f493a3e.svg",
     "main.5daa40ee.css.map": "./static/css/main.5daa40ee.css.map",
-    "main.1615eba9.js.map": "./static/js/main.1615eba9.js.map",
+    "main.3ac441c9.js.map": "./static/js/main.3ac441c9.js.map",
     "787.b23df5a7.chunk.js.map": "./static/js/787.b23df5a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5daa40ee.css",
-    "static/js/main.1615eba9.js"
+    "static/js/main.3ac441c9.js"
   ]
 }

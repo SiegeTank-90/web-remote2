@@ -24,7 +24,7 @@ function LiveView() {
         GuideChannels.push(<Channel
             num={i + 1}
             stationName={ChannelData[i].station}
-            icon={`public/channelIcons/${ChannelData[i].icon}`}
+            icon={`./channelIcons/${ChannelData[i].icon}`}
             index={guideIndex}
             setGuideIndex={setGuideIndex} />)
         if (i % 12 === 0 && i !== 0) {
