@@ -16,6 +16,7 @@ function LiveView() {
         if (i % 10 === 0 && i !== 0) {
             GuideChannels.push(<GuideAdvertistment
                 image={addImg}
+                key={'advertistment' + i}
                 title={'Watch Now!'}
                 message={'Mandalorians are fictional people associated with the planet Mandalore in the Star Wars universe'}
 
@@ -23,6 +24,7 @@ function LiveView() {
         }
         GuideChannels.push(<Channel
             num={i + 1}
+            key={ChannelData[i].id}
             stationName={ChannelData[i].station}
             icon={`./channelIcons/${ChannelData[i].icon}`}
             index={guideIndex}
@@ -30,6 +32,7 @@ function LiveView() {
         if (i % 12 === 0 && i !== 0) {
             GuideChannels.push(<GuideAppButton
                 logo={appImg}
+                key={'guideButton' + i}
                 message={'Netflix is a streaming service that offers a wide variety of award-winning TV shows and movies.'}
                 name={'YouTube'}
             />)

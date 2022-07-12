@@ -1,0 +1,128 @@
+@use 'colors' as *;
+
+.DevicesView {
+ margin: 10% 5% 0;
+ display: flex;
+ flex-wrap: wrap;
+ height: 67.5%;
+ align-content: flex-start;
+ overflow-y: scroll;
+ gap: 10px 5px;
+ -ms-overflow-style: none; /* IE and Edge */
+ scrollbar-width: none; /* Firefox */
+}
+.DevicesView::-webkit-scrollbar {
+ display: none;
+}
+
+.DeviceView--Device--Long {
+ border-radius: 25px;
+ padding: 2.5% 5%;
+ width: 100%;
+ max-height: 150px;
+ background-color: rgba(25, 25, 25, 0.5);
+}
+
+.DeviceView--Device--Short {
+ border-radius: 10px;
+ padding: 2.5% 5%;
+ width: 38%;
+ max-height: 180px;
+ background-color: rgba(25, 25, 25, 0.5);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.DeviceView--Device--Details {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 15px;
+}
+
+.DeviceView--Device--Live {
+ display: flex;
+ justify-content: flex-start;
+ gap: 15px;
+}
+
+.DeviceView--Device--Details-name {
+ color: white;
+ flex-grow: 2;
+ font-size: 1em;
+}
+
+.DeviceView--Device--Live-Img {
+ max-width: 55px;
+ max-height: 55px;
+}
+
+.DeviceView--Device--Live-Logo {
+ max-width: 60px;
+ max-height: 15px;
+}
+
+.DeviceView--Device--Live-program {
+ color: white;
+ margin: 0;
+ font-size: 0.75em;
+}
+
+.DeviceView--Device--Live-Content {
+ flex-grow: 2;
+}
+.DeviceView--Device--PlayIcon {
+ color: rgba(255, 255, 255, 0.35);
+ width: 55px;
+ height: 55px;
+}
+
+.DeviceView--Device--Details-ccOn {
+ color: white;
+}
+
+.DeviceView--Device--Details-ccOff {
+ color: rgba(0, 0, 0, 1);
+}
+.DeviceView--Device-Details-tvOn {
+ color: rgba(254, 210, 149, 1);
+ width: 50px;
+ background: transparent;
+ border: none;
+ font-weight: 800;
+ letter-spacing: 0.1em;
+}
+
+.DeviceView--Device-Details-tvOff {
+ color: rgb(97, 97, 97);
+ width: 50px;
+ background: transparent;
+ border: none;
+ font-weight: 800;
+ letter-spacing: 0.1em;
+}
+
+.DeviceView--Device--Details-btnOn {
+ background-color: rgba(8, 82, 157, 1);
+ border: 1px solid rgba(232, 220, 220, 1);
+ border-radius: 5px;
+ svg {
+  color: white;
+  width: 15px;
+ }
+}
+
+.DeviceView--Device--Details-btnOff {
+ background-color: rgba(83, 137, 193, 0.1);
+ border: 1px solid rgba(232, 220, 220, 0.1);
+ border-radius: 5px;
+ svg {
+  color: rgba(255, 255, 255, 0.5);
+  width: 15px;
+ }
+}
+
+@media screen and (max-width: 300px) {
+ .DevicesView {
+  margin: 10% 2.5% 0;
+ }
+}

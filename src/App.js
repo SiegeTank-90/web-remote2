@@ -4,6 +4,7 @@ import Header from './components/header';
 import RemoveView from './components/views/RemoteView';
 import AppsView from './components/views/AppsView';
 import LiveView from './components/views/LiveView';
+import DeviceView from './components/views/DevicesView';
 import Menu from './components/Menu';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
   View = <AppsView />;
  } else if (menuIndex === 3) {
   View = <LiveView />;
+ } else if (menuIndex === 4) {
+  View = <DeviceView />;
  }
 
  return (

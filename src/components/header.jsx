@@ -42,7 +42,6 @@ function Header() {
                             </div>
                         </div>
                         <Accordian name={'Change Input'} />
-                        <Accordian name={'Change Device'} />
                         <div className="Nav--collapsible--open-settings--setting">
                             <h2 className="Nav--collapsible--open-settings--setting--title">End Device Control</h2>
                             <div className="Nav--collapsible--open-settings--spacer">
