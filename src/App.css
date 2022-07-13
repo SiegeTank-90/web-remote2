@@ -702,6 +702,7 @@
 .DeviceView--Device--Live-Img {
   max-width: 55px;
   max-height: 55px;
+  border-radius: 10px;
 }
 
 .DeviceView--Device--Live-Logo {
